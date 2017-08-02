@@ -1,0 +1,1 @@
+include ':app', ':annotationbindingrecyclerview', ':adapter-annotation', ':adapter-processor'
