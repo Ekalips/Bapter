@@ -5,7 +5,7 @@
 
         <variable
             name="testData"
-            type="com.example.annotationbindingrecyclerview.data.TestData" />
+            type="com.ekalips.annotationbindingrecyclerview.data.TestData" />
 
         <variable
             name="clickAdapter"

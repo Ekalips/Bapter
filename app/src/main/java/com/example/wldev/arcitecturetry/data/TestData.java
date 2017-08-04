@@ -1,4 +1,4 @@
-package com.example.wldev.arcitecturetry.data;
+package com.ekalips.wldev.arcitecturetry.data;
 
 /**
  * Created by wldev on 8/1/17.

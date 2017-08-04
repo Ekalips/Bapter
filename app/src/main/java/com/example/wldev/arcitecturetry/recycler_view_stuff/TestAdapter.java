@@ -1,10 +1,10 @@
-package com.example.wldev.arcitecturetry.recycler_view_stuff;
+package com.ekalips.wldev.arcitecturetry.recycler_view_stuff;
 
-import com.example.wldev.arcitecturetry.R;
-import com.example.wldev.arcitecturetry.data.TestData;
-import com.example.wldev.arcitecturetry.recycler_view_stuff.annotations.Adapter;
-import com.example.wldev.arcitecturetry.recycler_view_stuff.annotations.DataSetType;
-import com.example.wldev.arcitecturetry.recycler_view_stuff.annotations.ViewFor;
+import com.ekalips.wldev.arcitecturetry.R;
+import com.ekalips.wldev.arcitecturetry.data.TestData;
+import com.ekalips.wldev.arcitecturetry.recycler_view_stuff.annotations.Adapter;
+import com.ekalips.wldev.arcitecturetry.recycler_view_stuff.annotations.DataSetType;
+import com.ekalips.wldev.arcitecturetry.recycler_view_stuff.annotations.ViewFor;
 
 /**
  * Created by wldev on 8/1/17.

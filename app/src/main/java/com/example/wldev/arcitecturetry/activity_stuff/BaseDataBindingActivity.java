@@ -1,4 +1,4 @@
-package com.example.wldev.arcitecturetry.activity_stuff;
+package com.ekalips.wldev.arcitecturetry.activity_stuff;
 
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;

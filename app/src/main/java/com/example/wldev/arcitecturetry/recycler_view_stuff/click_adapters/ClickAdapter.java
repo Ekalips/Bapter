@@ -1,4 +1,4 @@
-package com.example.wldev.arcitecturetry.recycler_view_stuff.click_adapters;
+package com.ekalips.wldev.arcitecturetry.recycler_view_stuff.click_adapters;
 
 import android.view.View;
 

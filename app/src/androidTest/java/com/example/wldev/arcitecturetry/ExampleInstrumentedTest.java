@@ -1,4 +1,4 @@
-package com.example.wldev.arcitecturetry;
+package com.ekalips.wldev.arcitecturetry;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

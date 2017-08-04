@@ -1,4 +1,4 @@
-package com.example.wldev.arcitecturetry.recycler_view_stuff.annotations;
+package com.ekalips.wldev.arcitecturetry.recycler_view_stuff.annotations;
 
 import android.support.annotation.LayoutRes;
 

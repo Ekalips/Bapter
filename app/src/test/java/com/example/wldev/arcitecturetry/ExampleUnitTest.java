@@ -1,4 +1,4 @@
-package com.example.wldev.arcitecturetry;
+package com.ekalips.wldev.arcitecturetry;
 
 import org.junit.Test;
 
