@@ -1,9 +1,70 @@
 apply plugin: 'java'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'maven-publish'
+apply plugin: 'com.jfrog.bintray'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:support-annotations:26.0.0'
 }
 
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"
+sourceCompatibility = JavaVersion.VERSION_1_6
+targetCompatibility = JavaVersion.VERSION_1_6
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+
+
+
+ext {
+
+    bintrayRepo = 'Bapter'
+    bintrayName = 'bapter-annotations'
+
+    publishedGroupId = 'com.ekalips'
+    libraryName = 'Bapter-Annotations'
+    artifact = 'bapter-annotations'
+
+    libraryDescription = 'Annotations module for Bupter library'
+
+    siteUrl = 'https://github.com/Ekalips/Bapter/'
+    gitUrl = 'https://github.com/Ekalips/Bapter.git'
+
+    libraryVersion = '0.1.1'
+
+    developerId = 'ekalips'
+    developerName = 'Bohdan Voiko'
+    developerEmail = 'djqrj96@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+group = publishedGroupId
+version = libraryVersion
+
+
+
+bintray {
+    user = properties.getProperty("bintray.user")
+    key = properties.getProperty("bintray.apikey")
+
+    configurations = ['archives']
+    pkg {
+        repo = bintrayRepo
+        name = bintrayName
+        desc = libraryDescription
+        websiteUrl = siteUrl
+        vcsUrl = gitUrl
+        licenses = allLicenses
+        publish = true
+        version {
+            name = libraryVersion
+            desc = libraryDescription
+            released = new Date()
+        }
+    }
+}
+
