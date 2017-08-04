@@ -146,7 +146,7 @@ public class MainProcessor extends AbstractProcessor {
         }
 
 
-        return true;
+        return false;
     }
 
     private TypeSpec generateViewTypesEnum(AnnotatedAdapter annotatedAdapter) {

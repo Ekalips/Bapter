@@ -1,7 +1,7 @@
 
 package com.example;
 
-import com.example.annotations.App;
+import com.example.annotations.Adapter;
 import com.example.generators.NewBRGetterMapperGenerator;
 import com.example.stuff.Consts;
 import com.squareup.javapoet.JavaFile;
@@ -36,7 +36,7 @@ import javax.tools.StandardLocation;
  */
 
 public class BRGetterProcessor extends AbstractProcessor {
-    private static final List<Class<App>> SUPPORTED_TYPES = Collections.singletonList(App.class);
+    private static final List<Class<Adapter>> SUPPORTED_TYPES = Collections.singletonList(Adapter.class);
 
     private Messager messager;
     private Types typesUtil;
@@ -96,19 +96,6 @@ public class BRGetterProcessor extends AbstractProcessor {
 
         if (set.isEmpty())
             return false;
-
-
-//        for (Element element :
-//                roundEnvironment.getElementsAnnotatedWith(App.class)) {
-//            String packageName = element.getEnclosingElement().toString();
-//
-//            try {
-//                JavaFile.builder(Consts.DEFAULT_PACKAGE_NAME, new BRGetterGenerator().generate(packageName))
-//                        .build().writeTo(filer);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        }
 
         return true;
     }
