@@ -28,11 +28,6 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "myMethod: " + ((TestData) object).getTest());
                 return null;
             }
-
-            @Override
-            public Void myMethod2(int position, BindingViewHolder holder, Object object) {
-                return null;
-            }
         };
 
 

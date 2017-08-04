@@ -22,14 +22,15 @@ public class Consts {
     public static final String CLASS_NAME_CLICK_ADAPTER = "ClickAdapter";
     public static final String CLASS_NAME_LONG_CLICK_ADAPTER = "LongClickAdapter";
     public static final String DEFAULT_PACKAGE_NAME = "com.ekalips";
+    public static final String DATABINDING_PACKAGE_NAME = "android.databinding";
 
-    public static final TypeVariableName BindingView = TypeVariableName.get("BindingView", ClassName.get("android.databinding", "ViewDataBinding"));
+    public static final TypeVariableName BindingView = TypeVariableName.get("BindingView", ClassName.get(DATABINDING_PACKAGE_NAME, "ViewDataBinding"));
     public static final ClassName RecyclerViewViewHolder = ClassName.get("android.support.v7.widget.RecyclerView", "ViewHolder");
     public static final ClassName RecyclerViewAdapter = ClassName.get("android.support.v7.widget.RecyclerView", "Adapter");
     public static final ClassName RecyclerView = ClassName.get("android.support.v7.widget", "RecyclerView");
     public static final ClassName View = ClassName.get("android.view", "View");
     public static final ClassName ViewGroup = ClassName.get("android.view", "ViewGroup");
-    public static final ClassName DataBindingUtil = ClassName.get("android.databinding", "DataBindingUtil");
+    public static final ClassName DataBindingUtil = ClassName.get(DATABINDING_PACKAGE_NAME, "DataBindingUtil");
     public static final ClassName LayoutInflater = ClassName.get("android.view", "LayoutInflater");
     public static final ClassName BindingViewHolder = ClassName.get(Consts.DEFAULT_PACKAGE_NAME, "BindingViewHolder");
     public static final ClassName ArrayList = ClassName.get("java.util", "ArrayList");
@@ -38,5 +39,6 @@ public class Consts {
     public static final ClassName DataSetInterface = ClassName.get(Consts.DEFAULT_PACKAGE_NAME, Consts.CLASS_NAME_DATA_SET);
     public static final String METHOD_SET_DATA = "setData";
     public static final String CLASS_NAME_BINDINGS = "Bindings";
-    public static final ClassName BRGetter = ClassName.get(Consts.DEFAULT_PACKAGE_NAME, Consts.CLASS_NAME_BR_GETTER);
+    public static final ClassName BRGetter = ClassName.get(Consts.DEFAULT_PACKAGE_NAME, Consts.CLASS_NAME_BR_MAPPER);
+    public static final String CLASS_NAME_BR_MAPPER = "AnnotationBRMapper";
 }

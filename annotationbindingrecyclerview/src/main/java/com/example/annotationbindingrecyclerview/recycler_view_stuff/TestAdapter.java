@@ -20,8 +20,7 @@ import com.example.annotations.ViewFor;
                 @ViewFor(dataClass = TestData.class, viewRes = R.layout.rv_item_test_adapter)
         },
         map = {@Bind(bindClass = TestData.class, bindMode = BindMode.variable, bindingResourceName = "testData"),
-                @Bind(bindClass = Void.class, bindMode = BindMode.method, bindingResourceName = "clickAdapter", methodName = "myMethod", methodCallMode = MethodCallMode.onClick),
-        @Bind(bindClass = Void.class, bindMode = BindMode.method, bindingResourceName = "clickAdapter", methodName = "myMethod2", methodCallMode = MethodCallMode.onLongClick)})
+                @Bind(bindClass = Void.class, bindMode = BindMode.method, bindingResourceName = "clickAdapter", methodName = "myMethod", methodCallMode = MethodCallMode.onClick)})
 public class TestAdapter {
 
 }

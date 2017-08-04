@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/adapter-annotation/adapter-annotation.iml" filepath="$PROJECT_DIR$/adapter-annotation/adapter-annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/adapter-processor/adapter-processor.iml" filepath="$PROJECT_DIR$/adapter-processor/adapter-processor.iml" />
       <module fileurl="file://$PROJECT_DIR$/annotationbindingrecyclerview/annotationbindingrecyclerview.iml" filepath="$PROJECT_DIR$/annotationbindingrecyclerview/annotationbindingrecyclerview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
