@@ -28,6 +28,7 @@ import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
@@ -175,9 +176,15 @@ public class MainProcessor extends AbstractProcessor {
 
     private void generateUserMethods(AnnotatedAdapter aa, TypeSpec.Builder builder) {
         UserMethodsGenerator userMethodsGenerator = new UserMethodsGenerator();
+
+        Set<String> methodNames = new HashSet<>();
+
         for (Bind bind :
                 aa.getBinds()) {
             if (bind.bindMode() != BindMode.method) continue;
+
+            if (!methodNames.add(bind.methodName()))
+                continue;
 
             TypeMirror dataTypeMirror = null;
             try {
