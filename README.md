@@ -33,6 +33,7 @@ Here you can specify what `getItemViewType` will return (based on data class)
 `@Bind`
 
 Basically all this is main thing that you carry about. 
+`bindingResourceName` field corresponds to `BR` constant name. For example if your variable is 'BR.test' than you need `bindingResourceName = "test"`
 
 `@Bind` can be 2 types (`bindMode`):
 1) Bind as variable. This will generate simple `binding.setVariable(BR.., object)` based on `bindClass` (`if (object instacneof bindClass)..`);
