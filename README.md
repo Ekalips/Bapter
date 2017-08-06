@@ -3,6 +3,8 @@ This is small library with few annotations and processors that will generate all
 
 # Usage
 
+Just be sure, that DataBinding is enabled in your project.
+
     @Adapter(
         dataSetType = @DataSetType(dataSetType = TestData.class),
         useViews = {
