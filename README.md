@@ -46,7 +46,7 @@ To set data to this adapter you have 2 options:
 1) Just call `adapter.setData(...)` on your adapter instance.
 2) Bind it. There is one `@BindingAdapter` that coems from box. You can bind any `List` with `src` annotation and `@BindingAdapter` will call `setData` for you. 
 
-#How to get
+# How to get
 
     maven {
         url "http://dl.bintray.com/ekalips/Bapter"
